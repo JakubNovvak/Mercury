@@ -10,12 +10,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun LoginScreen(): Unit {
+fun LoginScreen(onLogin: () -> Unit): Unit {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Welcome to Login Screen!")
+        Button(onClick = onLogin) { Text("Log In") }
     }
 }
