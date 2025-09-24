@@ -22,10 +22,10 @@ fun AppNavigation() {
             LoginScreen(onLogin = { navController.navigate("chats") })
         }
         composable("chats") {
-            ChatListScreen()
+            ChatListScreen(onChatClick = {navController.navigate("chat/{chatId}")})
         }
         composable("chat/{chatId}") {
-
+            ChatScreen()
         }
     }
 }
