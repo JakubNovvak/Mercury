@@ -25,7 +25,7 @@ fun ChatListScreen(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         items(chats) { chat ->
-            Button(onClick = {onChatClick("1")}) { Text(text = chat.name) }
+            Button(onClick = {onChatClick(chat.id)}) { Text(text = chat.name) }
         }
     }
 }
