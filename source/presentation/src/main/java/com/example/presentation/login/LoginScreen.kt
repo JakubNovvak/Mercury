@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.DividerDefaults
 import androidx.compose.material3.HorizontalDivider
@@ -83,7 +84,8 @@ fun LoginScreen(onLogin: () -> Unit): Unit {
 
         Button(
             onClick = onLogin,
-            modifier = Modifier.padding(top = 40.dp).width(150.dp)
+            modifier = Modifier.padding(top = 40.dp).width(150.dp),
+            colors = ButtonDefaults.buttonColors(Color(0xff279fdc))
         ) {
             Text(
                 "Log in",
