@@ -45,6 +45,9 @@ android {
 dependencies {
     implementation(project(":domain"))
 
+    implementation(libs.androidx.compose.material.icons.core)
+    implementation(libs.androidx.compose.material.icons.extended)
+
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     //Hilt integration with ViewModels
