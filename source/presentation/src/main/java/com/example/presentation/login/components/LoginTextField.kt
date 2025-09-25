@@ -17,7 +17,7 @@ fun LoginTextField(
     label: String,
     modifier: Modifier = Modifier,
     isPasswordField: Boolean = false
-): Unit {
+) {
     TextField(
         value = value,
         onValueChange = onValueChange,

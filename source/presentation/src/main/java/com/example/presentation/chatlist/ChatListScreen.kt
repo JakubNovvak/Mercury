@@ -36,7 +36,7 @@ import com.example.presentation.chatlist.components.ChatListElement
 fun ChatListScreen(
     viewModel: ChatListViewModel = hiltViewModel(),
     onChatClick: (chatId: String) -> Unit
-    ): Unit {
+    ) {
     val chats = viewModel.uiChatsItems.collectAsState().value
 
     Column {

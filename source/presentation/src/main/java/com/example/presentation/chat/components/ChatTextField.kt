@@ -28,7 +28,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ChatTextField(): Unit {
+fun ChatTextField() {
     var textFieldMessageValue by remember { mutableStateOf("") }
     Column(
         modifier = Modifier

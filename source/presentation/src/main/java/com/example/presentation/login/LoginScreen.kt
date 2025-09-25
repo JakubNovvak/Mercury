@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.sp
 import com.example.presentation.login.components.LoginTextField
 
 @Composable
-fun LoginScreen(onLogin: () -> Unit): Unit {
+fun LoginScreen(onLogin: () -> Unit) {
     var textFieldLoginValue by remember { mutableStateOf("jakubnovvak") }
     var textFieldPasswordValue by remember { mutableStateOf("password123!") }
 

@@ -23,7 +23,7 @@ fun ChatListElement(
     title: String,
     lastMessageTime: String,
     lastMessagePreview: String,
-): Unit {
+) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Start,

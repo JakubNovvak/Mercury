@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ChatMessageBubble(content: String, isOwnMessage: Boolean, timeStamp: String): Unit {
+fun ChatMessageBubble(content: String, isOwnMessage: Boolean, timeStamp: String) {
     Column(
         modifier = Modifier.padding(bottom = 10.dp)
     ) {

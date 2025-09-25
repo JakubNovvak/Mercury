@@ -22,7 +22,7 @@ import com.example.presentation.chat.components.ChatTopBar
 fun ChatScreen(
     onCancel: () -> Unit,
     viewModel: ChatViewModel = hiltViewModel()
-): Unit {
+) {
     val chatInfo = viewModel.chatInfo
     val chatMessages = viewModel.uiChatMessages.collectAsState().value
     val loggedInUserId = viewModel.loggedInUserId
