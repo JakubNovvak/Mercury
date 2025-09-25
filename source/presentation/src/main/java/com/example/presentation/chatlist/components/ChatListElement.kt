@@ -47,8 +47,9 @@ fun ChatListElement(
             ) {
                 Text(
                     text = title,
+                    color = Color.Black,
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.W600,
+                    fontWeight = FontWeight.W500,
                     modifier = Modifier.padding(bottom = 5.dp)
                 )
 
