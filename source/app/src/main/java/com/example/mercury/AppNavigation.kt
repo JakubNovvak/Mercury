@@ -35,7 +35,10 @@ fun AppNavigation() {
             //Here hiltViewModel acquires SavedStateHandle with chatId from the NavBackStackEntry.
             //It makes chatId available directly in the ChatViewModel
             val viewModel: ChatViewModel = hiltViewModel()
-            ChatScreen(viewModel)
+            ChatScreen(
+                onCancel = {navController.popBackStack()},
+                viewModel = viewModel
+            )
         }
     }
 }
