@@ -7,13 +7,11 @@ import com.example.presentation.chatlist.uimodels.UiChatsListItem
 import com.example.presentation.common.helpers.convertMillisToHoursAndMinutes
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 @HiltViewModel
 class ChatListViewModel @Inject constructor(private val getChatsUseCase: GetChatsUseCase): ViewModel() {
     private val _chats = MutableStateFlow<List<Chat>>(emptyList())
-    val chats: StateFlow<List<Chat>> = _chats
     val uiChatsItems = MutableStateFlow<List<UiChatsListItem>>(emptyList())
 
     init {

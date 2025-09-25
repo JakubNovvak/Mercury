@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ChatViewModel @Inject constructor(
-    private val getChatByIdUseCase: GetChatByIdUseCase,
+    getChatByIdUseCase: GetChatByIdUseCase,
     private val getMessagesByChatIdUseCase: GetMessagesByChatIdUseCase,
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
@@ -26,7 +26,6 @@ class ChatViewModel @Inject constructor(
     val chatInfo = getChatByIdUseCase.invoke(_chatId.value)
 
     private var _chatMessages = MutableStateFlow<List<Message>>(emptyList())
-    val chatMessages = mapMessagesToUIMessageBubbles()
     val uiChatMessages = MutableStateFlow<List<UiMessageBubble>>(emptyList())
 
     init {
