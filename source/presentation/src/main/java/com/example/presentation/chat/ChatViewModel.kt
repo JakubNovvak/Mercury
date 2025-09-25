@@ -2,7 +2,6 @@ package com.example.presentation.chat
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.example.domain.entities.Chat
 import com.example.domain.entities.Message
 import com.example.domain.usecases.GetChatByIdUseCase
 import com.example.domain.usecases.GetMessagesByChatIdUseCase
